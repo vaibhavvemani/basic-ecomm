@@ -16,6 +16,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 35px;
+    border-bottom:#AA767C 3px solid;
+
     width: 100vw;
     padding-inline: 5vw;
 }
@@ -27,7 +29,7 @@ body {
 
 .header p {
     font-size: large;
-    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), font-weight 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), font-weight 0.1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .header p:hover {
@@ -53,4 +55,11 @@ body {
     color: #fff;
     font-weight: bold;
     transform: translateY(2px);
+}
+
+.shopping-cart {
+    background-image: url("static/shopping_cart.png");
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
 }
