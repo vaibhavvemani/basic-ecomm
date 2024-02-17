@@ -13,23 +13,41 @@ body {
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 35px;
+    gap: 3px;
     border-bottom:#AA767C 3px solid;
 
     width: 100vw;
-    padding-inline: 5vw;
+    flex-wrap: wrap;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 15%;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 15%;
 }
 
 .header h1 {
-    margin-inline: calc(max(50px, 10vw));
     margin-block: 20px;
+    text-align: center;
 }
 
 .header p {
     font-size: large;
-    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), font-weight 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 0.1s cubic-bezier(0.19, 1, 0.22, 1), font-weight 0.1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .header p:hover {
@@ -39,6 +57,7 @@ body {
 
 .header button {
     width: 6em;
+    min-width: 5em;
     height: 2em;
 
     background-color: #AA767C;
