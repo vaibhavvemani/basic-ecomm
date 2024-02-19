@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Red+Hat+Mono:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 * {
     box-sizing: border-box;
@@ -13,22 +14,22 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    gap: 9px;
+    gap: 15px;
     border-bottom:#AA767C 3px solid;
-
+    padding: 5px;
     width: 100vw;
     flex-wrap: wrap;
+    place-content: center;
 }
 
 .left-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 8px;
-    width: 15%;
+    min-width: 10em;
 }
 
 .right-nav {
@@ -36,14 +37,25 @@ body {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
-    width: 15%;
+    gap: 5px;
+    min-width: 10em;
 }
 
-.header h1 {
-    margin-block: 20px;
-    text-align: center;
+.logo {
+    display: flex;
+    font-family: 'Abril Factface', serif;
+    margin-inline: 10%;
+    gap: 5px;
+    place-items: center;
 }
+
+.car-icon img{
+    max-width: 5em;
+    max-height: 5em;
+    padding-right: 8px;
+    border-right: 2px solid black;
+}
+
 
 .header p {
     font-size: large;
@@ -55,7 +67,7 @@ body {
     font-weight: bold;
 }
 
-.header button {
+.link-button {
     width: 6em;
     min-width: 5em;
     height: 2em;
@@ -69,7 +81,7 @@ body {
     transition: background-color 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22), transform 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.header button:hover {
+.link-button:hover{
     background-color: #242424;
     color: #fff;
     font-weight: bold;
@@ -78,6 +90,27 @@ body {
 
 .shopping-cart {
     background-image: url("static/shopping_cart.png");
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+}
+
+.wishlist-icon {
+    background-image: url("static/wishlist.png");
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+}
+
+.account-icon {
+    background-image: url("static/account.png");
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+}
+
+.search-icon {
+    background-image: url("static/search.png");
     height: 30px;
     width: 30px;
     background-repeat: no-repeat;
