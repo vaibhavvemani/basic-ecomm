@@ -72,15 +72,15 @@ body {
 }
 
 .link-button {
-    min-width: 5em;
-    min-height: 32px;
+    min-width: 4em;
+    min-height: 28px;
 
     background-color: #AA767C;
     color: #EDD4B2;
     border: 1px solid black;
     box-shadow: 1px 2px black;
     border-radius: 12px;
-    font-size: 24px;
+    font-size: 20px;
 
     transition: background-color 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22), transform 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
