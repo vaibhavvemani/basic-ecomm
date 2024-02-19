@@ -50,6 +50,7 @@ body {
 
 .logo h1 {
     font-family: 'Abril Fatface', serif;
+    transform: translateY(-2px);
 }
 
 .car-icon img{
@@ -92,28 +93,28 @@ body {
 }
 
 .shopping-cart {
-    background-image: url("static/shopping_cart.png");
+    background-image: url("static/shopping-cart.svg");
     height: 30px;
     width: 30px;
     background-repeat: no-repeat;
 }
 
 .wishlist-icon {
-    background-image: url("static/wishlist.png");
+    background-image: url("static/wishlist.svg");
     height: 30px;
     width: 30px;
     background-repeat: no-repeat;
 }
 
 .account-icon {
-    background-image: url("static/account.png");
+    background-image: url("static/account.svg");
     height: 30px;
     width: 30px;
     background-repeat: no-repeat;
 }
 
 .search-icon {
-    background-image: url("static/search.png");
+    background-image: url("static/search.svg");
     height: 30px;
     width: 30px;
     background-repeat: no-repeat;
