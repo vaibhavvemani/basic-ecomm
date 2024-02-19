@@ -34,7 +34,7 @@ body {
 
 .right-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 5px;
@@ -43,10 +43,13 @@ body {
 
 .logo {
     display: flex;
-    font-family: 'Abril Factface', serif;
     margin-inline: 10%;
     gap: 5px;
     place-items: center;
+}
+
+.logo h1 {
+    font-family: 'Abril Fatface', serif;
 }
 
 .car-icon img{
@@ -68,15 +71,15 @@ body {
 }
 
 .link-button {
-    width: 6em;
     min-width: 5em;
-    height: 2em;
+    min-height: 32px;
 
     background-color: #AA767C;
     color: #EDD4B2;
     border: 1px solid black;
     box-shadow: 1px 2px black;
     border-radius: 12px;
+    font-size: 24px;
 
     transition: background-color 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22), transform 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
