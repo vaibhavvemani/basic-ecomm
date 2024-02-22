@@ -142,9 +142,6 @@ body {
     border: 3px solid white;    
 
     border-radius: 8px;
-    /* background: #EDD4B2;
-    box-shadow:  36px 36px 46px #ceb89b,
-                -36px -36px 46px #fff0c9; */
     display: grid;
     grid-template-rows: repeat(10, 0.1fr);
     grid-template-columns: repeat(10, 0.1fr);
