@@ -24,13 +24,13 @@ body {
     place-content: center;
 }
 
-.left-nav {
+/* .left-nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     min-width: 10em;
-}
+} */
 
 .right-nav {
     display: flex;
@@ -38,7 +38,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 5px;
-    min-width: 10em;
+    min-width: 5em;
 }
 
 .logo {
