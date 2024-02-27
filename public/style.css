@@ -79,35 +79,17 @@ body {
 .link-button:hover{
     background-color: #242424;
     font-weight: bold;
-    transform: translateY(2px);
+    transform: translateY(-2px);
 }
 
-.shopping-cart {
-    background-image: url("static/shopping-cart.svg");
+.header-icon {
     height: 30px;
     width: 30px;
     background-repeat: no-repeat;
+    transition: transform 0.1s cubic-bezier(0.3, 0.44, 0.81, 1.28);
 }
-
-.wishlist-icon {
-    background-image: url("static/wishlist.svg");
-    height: 30px;
-    width: 30px;
-    background-repeat: no-repeat;
-}
-
-.account-icon {
-    background-image: url("static/account.svg");
-    height: 30px;
-    width: 30px;
-    background-repeat: no-repeat;
-}
-
-.search-icon {
-    background-image: url("static/search.svg");
-    height: 30px;
-    width: 30px;
-    background-repeat: no-repeat;
+.header-icon:hover {
+    transform: translateY(-2px);
 }
 
 /* Landing page CSS */
