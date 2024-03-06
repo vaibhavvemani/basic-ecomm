@@ -4,12 +4,12 @@ const fs = require('fs');
 const server = http.createServer((req, res) => {
   const url = req.url;
 
-  if (url === '/ssr') {
+  if (url === '/api/ssr') {
     const homePage = renderHomePage();
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
     res.end(homePage);
-  } else if (url === '/ssr/car') {
+  } else if (url === '/api/ssr/car') {
     const carPage = renderCarPage();
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
