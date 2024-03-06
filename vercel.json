@@ -1,7 +1,10 @@
 {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/public/index.html" },
-      { "source": "/car", "destination": "/api/index.js" },
-      { "source": "/ssr", "destination": "/api/index.js" }
-    ]
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/public/index.html" },
+    { "source": "/car", "destination": "/api/index.js" },
+    { "source": "/ssr", "destination": "/api/index.js" }
+  ],
+  "redirects": [
+    { "source": "/ssr", "destination": "/api/index.js", "permanent": false }
+  ]
 }
