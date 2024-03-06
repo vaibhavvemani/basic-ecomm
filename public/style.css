@@ -28,10 +28,28 @@ body {
 
 .left-nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    min-width: 10em;
+    min-width: 8em;
+
+    background-color: #AA767C;
+    color: #EDD4B2;
+    border: 1px solid black;
+    box-shadow: 1px 2px black;
+    border-radius: 12px;
+    font-size: 18px;
+
+    transition: transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.left-nav:hover {
+    /* background-color: #242424; */
+    font-weight: bold;
+    transform: translateY(-2px);
+}
+.left-nav img {
+    border-left: 1px solid black;
+    padding-left: 8px;
 }
 
 .right-nav {
@@ -40,7 +58,8 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 5px;
-    min-width: 10em;
+    min-width: 12em;
+    max-height: 26px;
 }
 
 .logo {
@@ -62,35 +81,49 @@ body {
     border-right: 2px solid black;
 }
 
-.link-button {
+.catalogue-button {
     min-width: 4em;
     min-height: 28px;
 
     background-color: #AA767C;
     color: #EDD4B2;
-    border: 1px solid black;
-    box-shadow: 1px 2px black;
-    border-radius: 12px;
-    font-size: 20px;
-
-    transition: background-color 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22), transform 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.link-button:hover{
-    background-color: #242424;
-    font-weight: bold;
-    transform: translateY(-2px);
+    border: 0;
+    font-size: 18px;
 }
 
 .header-icon {
-    height: 30px;
-    width: 30px;
     background-repeat: no-repeat;
     transition: transform 0.1s cubic-bezier(0.3, 0.44, 0.81, 1.28);
 }
 .header-icon:hover {
     transform: translateY(-2px);
 }
+
+.search-icon {
+    max-height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding-inline: 6px;
+    box-shadow: 1px 2px black;
+
+}
+.search-icon input {
+    max-width: 6em;
+    max-height: 24px;
+    background-color: #EDD4B2;
+    border: 0;
+    border-radius: 12px;
+    padding: 4px;
+    outline: none;
+    color:#AA767C;
+}
+/* .search-icon img {
+    border-left: 1px solid black;
+    padding-left: 3px;
+} */
 
 /* Landing page CSS */
 
