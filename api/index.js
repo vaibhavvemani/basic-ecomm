@@ -4,7 +4,7 @@ const fs = require('fs');
 const server = http.createServer((req, res) => {
   const url = req.url;
 
-  if (url === '/') {
+  if (url === '/api') {
     const homePage = renderHomePage();
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
