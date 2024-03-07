@@ -1,8 +1,6 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/public/index.html" }
-  ],
-  "redirects": [
-    { "source": "/ssr", "destination": "/api" }
+    { "source": "/(.*)", "destination": "/public/index.html" },
+    { "source": "/ssr", "destination": "/api/index.js" }
   ]
 }
