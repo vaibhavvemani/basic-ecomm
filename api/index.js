@@ -6,10 +6,11 @@ const server = http.createServer((req, res) => {
 
   if (url === '/api') {
     const homePage = renderHomePage();
+    console.log("Loading On Server")
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
     res.end(homePage);
-  } else if (url === '/car') {
+  } else if (url === '/api/car') {
     const carPage = renderCarPage();
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
