@@ -14,10 +14,4 @@
 //     console.error(err);
 //   }
 // }
-
-const signup_btn = document.getElementById("signup-btn");
-signup_btn.addEventListener('click', printer);
-
-function printer() {
-  console.log("Hello There");
-}
+console.log("Hello there");
