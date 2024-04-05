@@ -1,104 +1,23 @@
-const http = require('http');
-const fs = require('fs');
+// import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+// const supabase = createClient('https://aeyxclumolbhgmyapqjf.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFleXhjbHVtb2xiaGdteWFwcWpmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDg5MzQ4MDksImV4cCI6MjAyNDUxMDgwOX0.hsB2SCTTIyQRDkKayewdGnJL-Mw981wZvWMipzZg4C0')
 
-const server = http.createServer((req, res) => {
-  const url = req.url;
 
-  if (url === '/api') {
-    const homePage = renderHomePage();
-    console.log("Loading On Server")
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/html');
-    res.end(homePage);
-  } else if (url === '/api/car') {
-    const carPage = renderCarPage();
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/html');
-    res.end(carPage);
-  } else {
-    res.statusCode = 404;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end(req.url);
-  }
-});
+// async function signUp() {
+//   let user_email = email_input.value;
+//   let user_password = password_input.value;
+//   try {
+//     const { data, error } = await supabase.auth.signUp({
+//       email: user_email,
+//       password: user_password,
+//     })
+//   } catch(err) {
+//     console.error(err);
+//   }
+// }
 
-const renderHomePage = () => {
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Revlift</title>
-      <style>
-        header {
-          background-color: #333;
-          color: #fff;
-          padding: 20px;
-          text-align: center;
-        }
-      </style>
-    </head>
-    <body>
-      <header>
-        <h1>Revlift</h1>
-      </header>
-      <main>
-        <h2>Welcome to Revlift!</h2>
-      </main>
-    </body>
-    </html>
-  `;
-  return html;
-};
+const signup_btn = document.getElementById("signup-btn");
+signup_btn.addEventListener('click', printer);
 
-const renderCarPage = () => {
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Car Page</title>
-      <style>
-        header {
-          background-color: #333;
-          color: #fff;
-          padding: 20px;
-          text-align: center;
-        }
-        .car-image {
-          display: block;
-          margin: 0 auto;
-          max-width: 100%;
-          height: auto;
-        }
-        .buy-button {
-          display: block;
-          margin: 20px auto;
-          padding: 10px 20px;
-          background-color: #333;
-          color: #fff;
-          border: none;
-          cursor: pointer;
-        }
-      </style>
-    </head>
-    <body>
-      <header>
-        <h1>Revlift</h1>
-      </header>
-      <main>
-        <img src="/car.jpg" alt="Car Image" class="car-image">
-        <button class="buy-button">Buy Now</button>
-      </main>
-    </body>
-    </html>
-  `;
-  return html;
-};
-
-const PORT = process.env.PORT || 3000;
-server.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+function printer() {
+  console.log("Hello There");
+}
