@@ -176,8 +176,27 @@ body {
 
 }
 
-.right-landing h2{
-    max-width: 20em;
+.right-landing input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #AA767C;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.right-landing input[type="text"]:focus {
+    outline: none;
+    border-color: #8B5D63;
+    box-shadow: 0 0 5px rgba(170, 118, 124, 0.5);
+}
+
+.right-landing input[type="text"]::placeholder {
+    color: #999;
 }
 
 .right-landing button {
